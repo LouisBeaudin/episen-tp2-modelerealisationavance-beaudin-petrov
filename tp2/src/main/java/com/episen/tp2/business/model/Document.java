@@ -10,12 +10,12 @@ public class Document implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(columnDefinition = "serial")
-    private Long documentId;
+    private Long documentid;
 
     @Column (name="created")
     private Timestamp created;
 
-    @Column(name="update")
+    @Column(name="updated")
     private Timestamp updated;
 
     @Column(name="title")
@@ -39,8 +39,8 @@ public class Document implements Serializable {
     public Document() {
     }
 
-    public Document(Long documentId, Timestamp created, Timestamp updated, String title, String creator, String editor, String body, DocumentStatusEnum statusdocument, DocumentList documentlist) {
-        this.documentId = documentId;
+    public Document(Long documentid, Timestamp created, Timestamp updated, String title, String creator, String editor, String body, DocumentStatusEnum statusdocument, DocumentList documentlist) {
+        this.documentid = documentid;
         this.created = created;
         this.updated = updated;
         this.title = title;
@@ -51,12 +51,12 @@ public class Document implements Serializable {
         this.documentlist = documentlist;
     }
 
-    public Long getDocumentId() {
-        return documentId;
+    public Long getDocumentid() {
+        return documentid;
     }
 
-    public void setDocumentId(Long documentId) {
-        this.documentId = documentId;
+    public void setDocumentid(Long documentid) {
+        this.documentid = documentid;
     }
 
     public Timestamp getCreated() {

@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 
 public class DocumentDTO {
 
-    private Long documentId;
+    private Long documentid;
     private String description;
     private Timestamp created;
     private Timestamp updated;
@@ -19,8 +19,8 @@ public class DocumentDTO {
     public DocumentDTO() {
     }
 
-    public DocumentDTO(Long documentId, String description, Timestamp created, Timestamp updated, String title, String creator, String editor, String body, DocumentStatusEnum statusdocument) {
-        this.documentId = documentId;
+    public DocumentDTO(Long documentid, String description, Timestamp created, Timestamp updated, String title, String creator, String editor, String body, DocumentStatusEnum statusdocument) {
+        this.documentid = documentid;
         this.description = description;
         this.created = created;
         this.updated = updated;
@@ -31,12 +31,12 @@ public class DocumentDTO {
         this.statusdocument = statusdocument;
     }
 
-    public Long getDocumentId() {
-        return documentId;
+    public Long getDocumentid() {
+        return documentid;
     }
 
-    public void setDocumentId(Long documentId) {
-        this.documentId = documentId;
+    public void setDocumentid(Long documentid) {
+        this.documentid = documentid;
     }
 
     public String getDescription() {
